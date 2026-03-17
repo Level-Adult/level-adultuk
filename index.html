@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level-AdultUK – Practical Guides for Young Adults</title>
+  <meta name="description" content="Downloadable PDFs on passports, travel, renting, careers & more – Instant access for 18-25s in the UK."/>
+  
+  <!-- Link to your styles.css file (must exist in the same folder) -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div>
+      <h1>Level-AdultUK</h1>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Sun icon (visible in light mode) -->
+        <svg id="sun" class="hidden" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+        </svg>
+        <!-- Moon icon (visible in dark mode) -->
+        <svg id="moon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section>
+    <div>
+      <h2>Level-AdultUK</h2>
+      <p>Level up your adult life</p>
+      <p>Practical downloadable guides for 18-25s in the UK</p>
+      <a href="#guides">Browse Guides</a>
+    </div>
+  </section>
+
+  <!-- Guides Section -->
+  <section id="guides">
+    <div>
+      <h3>Our Guides – Only £1.99 Each</h3>
+      
+      <div>
+        <!-- Guide 1 -->
+        <div>
+          <h4>Guide 1: Getting Your First UK Passport</h4>
+          <p>Step-by-step process, required documents, and common mistakes to avoid.</p>
+          <div>
+            <span>£1.99</span>
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Guide 2 -->
+        <div>
+          <h4>Guide 2: Booking Cheap Travel from the UK</h4>
+          <p>Best websites, timing hacks, and budget travel tips for 2026.</p>
+          <div>
+            <span>£1.99</span>
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Add your other 8 guides here by duplicating the <div> block above -->
+        <!-- Example: Guide 3: Renting Your First Flat in the UK, etc. -->
+
+        <!-- Bundle -->
+        <div>
+          <h4>Starter Pack: All 10 Guides</h4>
+          <p>Get everything for just £14.99 – Save 25%</p>
+          <button>Buy the Full Bundle</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Signup -->
+  <section>
+    <div>
+      <h3>Stay in the Loop</h3>
+      <p>Get notified when we release new guides or run discounts.</p>
+      <form>
+        <input type="email" placeholder="your.email@example.com">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p>We hate spam too – only useful updates.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Level-AdultUK. All rights reserved.</p>
+  </footer>
+
+  <!-- Dark Mode Toggle Script (basic, works without Tailwind) -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const sun = document.getElementById('sun');
+    const moon = document.getElementById('moon');
+
+    // Initial check
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      sun.classList.add('hidden');
+      moon.classList.remove('hidden');
+    } else {
+      document.documentElement.classList.remove('dark');
+      sun.classList.remove('hidden');
+      moon.classList.add('hidden');
+    }
+
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+        sun.classList.add('hidden');
+        moon.classList.remove('hidden');
+      } else {
+        localStorage.theme = 'light';
+        sun.classList.remove('hidden');
+        moon.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
