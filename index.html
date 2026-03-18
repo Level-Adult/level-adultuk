@@ -1,145 +1,106 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Level-AdultUK – Practical Guides for Young Adults</title>
-  <meta name="description" content="Downloadable PDFs on passports, travel, renting, careers & more – Instant access for 18-25s in the UK."/>
-  
-  <!-- Link to your styles.css file (must exist in the same folder) -->
+  <meta name="description" content="Friendly guides to help you navigate adulthood."/>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <div>
-      <h1>Level-AdultUK</h1>
-      <button id="theme-toggle" aria-label="Toggle dark mode">
-        <!-- Sun icon (visible in light mode) -->
-        <svg id="sun" class="hidden" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-        </svg>
-        <!-- Moon icon (visible in dark mode) -->
-        <svg id="moon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-        </svg>
-      </button>
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-blue-600">Level-AdultUK</h1>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
 
-  <!-- HERO + FRIENDLY BANNER -->
-<section class="py-16 px-6 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
-  <div class="max-w-4xl mx-auto text-center">
-    
-    <h2 class="text-5xl font-bold mb-4 text-gray-900 dark:text-white">Level-AdultUK</h2>
-    <p class="text-2xl text-gray-600 dark:text-gray-300 mb-10">Level up your adult life</p>
+  <!-- Hero + Friendly Banner -->
+  <section class="py-16 px-6 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-5xl font-bold mb-4">Level-AdultUK</h2>
+      <p class="text-2xl text-gray-600 dark:text-gray-300 mb-10">Level up your adult life</p>
 
-    <!-- Friendly Banner -->
-    <div class="bg-white dark:bg-gray-800 border border-blue-100 dark:border-blue-900 rounded-3xl p-10 mb-12 shadow-sm max-w-3xl mx-auto">
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-        Welcome to Level-AdultUK! 👋<br><br>
-        Adulthood can feel overwhelming sometimes, so we made this site to help.<br>
-        We create clear, friendly guides on all the real-life things no one really teaches you — 
-        passports, travel, renting, jobs, money, bills, mortgages, mental health support, and more.<br><br>
-        New guides added every month to help you feel more confident, one step at a time.
-      </p>
+      <div class="bg-white dark:bg-gray-800 border border-blue-100 dark:border-blue-900 rounded-3xl p-10 mb-12 shadow-sm">
+        <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+          Welcome to Level-AdultUK! 👋<br><br>
+          Adulthood can feel overwhelming sometimes, so we made this site to help.<br>
+          We create clear, friendly guides on all the real-life things no one really teaches you — 
+          passports, travel, renting, jobs, money, bills, mortgages, mental health support, and more.<br><br>
+          New guides added every month to help you feel more confident, one step at a time.
+        </p>
+      </div>
+
+      <a href="#guides" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-2xl text-lg font-medium transition">
+        Browse All Guides
+      </a>
     </div>
-
-    <a href="#guides" 
-       class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-2xl text-lg font-medium transition shadow-md">
-      Browse All Guides
-    </a>
-  </div>
-</section>
+  </section>
 
   <!-- Guides Section -->
-  <section id="guides">
-    <div>
-      <h3>Our Guides – Only £1.99 Each</h3>
-      
-      <div>
-        <!-- Guide 1 -->
-        <div>
-          <h4>Guide 1: Getting Your First UK Passport</h4>
-          <p>Step-by-step process, required documents, and common mistakes to avoid.</p>
-          <div>
-            <span>£1.99</span>
-            <button>Buy Now</button>
-          </div>
+  <section id="guides" class="py-16 px-6 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-12">Our Guides – Only £1.99 Each</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- === Replace the Payhip button code below for each guide === -->
+        <div class="guide-card">
+          <h4>Getting Your First UK Passport</h4>
+          <p>Step-by-step guide with everything you need to apply successfully.</p>
+          <div class="price">£1.99</div>
+          <!-- PASTE PAYHIP BUTTON HERE -->
+          <button class="buy-btn">Buy Now</button>
         </div>
 
-        <!-- Guide 2 -->
-        <div>
-          <h4>Guide 2: Booking Cheap Travel from the UK</h4>
-          <p>Best websites, timing hacks, and budget travel tips for 2026.</p>
-          <div>
-            <span>£1.99</span>
-            <button>Buy Now</button>
-          </div>
+        <div class="guide-card">
+          <h4>Booking Cheap Travel from the UK</h4>
+          <p>Best websites, timing hacks and budget travel tips for 2026.</p>
+          <div class="price">£1.99</div>
+          <!-- PASTE PAYHIP BUTTON HERE -->
+          <button class="buy-btn">Buy Now</button>
         </div>
 
-        <!-- Add your other 8 guides here by duplicating the <div> block above -->
-        <!-- Example: Guide 3: Renting Your First Flat in the UK, etc. -->
+        <!-- Add your other 8 guides here by copying the block above -->
 
-        <!-- Bundle -->
-        <div>
-          <h4>Starter Pack: All 10 Guides</h4>
-          <p>Get everything for just £14.99 – Save 25%</p>
-          <button>Buy the Full Bundle</button>
+        <!-- Bundle Card -->
+        <div class="guide-card bundle-card col-span-1 md:col-span-2 lg:col-span-3">
+          <h4>Starter Pack – All 10 Guides</h4>
+          <p class="text-lg">Everything in one bundle • Best value</p>
+          <div class="price">£14.99 <span class="line-through text-gray-400">£19.90</span></div>
+          <!-- PASTE PAYHIP BUNDLE BUTTON HERE -->
+          <button class="buy-btn">Buy the Full Bundle</button>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- Email Signup -->
-  <section>
-    <div>
-      <h3>Stay in the Loop</h3>
-      <p>Get notified when we release new guides or run discounts.</p>
-      <form>
-        <input type="email" placeholder="your.email@example.com">
-        <button type="submit">Subscribe</button>
+  <section class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-md mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Stay in the Loop</h3>
+      <p class="mb-6">Get notified when we release new guides.</p>
+      <form class="flex gap-3">
+        <input type="email" placeholder="your.email@example.com" class="flex-1 px-5 py-3 rounded-xl border">
+        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-xl">Subscribe</button>
       </form>
-      <p>We hate spam too – only useful updates.</p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Level-AdultUK. All rights reserved.</p>
+  <footer class="py-8 text-center text-gray-500 dark:text-gray-400">
+    © 2026 Level-AdultUK. All rights reserved.
   </footer>
 
-  <!-- Dark Mode Toggle Script (basic, works without Tailwind) -->
+  <!-- Dark Mode Script -->
   <script>
     const toggle = document.getElementById('theme-toggle');
-    const sun = document.getElementById('sun');
-    const moon = document.getElementById('moon');
-
-    // Initial check
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-      sun.classList.add('hidden');
-      moon.classList.remove('hidden');
-    } else {
-      document.documentElement.classList.remove('dark');
-      sun.classList.remove('hidden');
-      moon.classList.add('hidden');
-    }
-
     toggle.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
-      if (document.documentElement.classList.contains('dark')) {
-        localStorage.theme = 'dark';
-        sun.classList.add('hidden');
-        moon.classList.remove('hidden');
-      } else {
-        localStorage.theme = 'light';
-        sun.classList.remove('hidden');
-        moon.classList.add('hidden');
-      }
+      toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
     });
   </script>
-
 </body>
 </html>
