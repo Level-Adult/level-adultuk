@@ -56,6 +56,23 @@ input { flex: 1; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.5
 html.dark input { background: #374151; border-color: #4b5563; color: white; }
 button { background: #3b82f6; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: none; cursor: pointer; }
 button:hover { background: #60a5fa; }
+/* Payhip button styling – makes them match your blue theme */
+.payhip-btn {
+  background: #3b82f6 !important;
+  color: white !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: background 0.2s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.payhip-btn:hover {
+  background: #2563eb !important;
+}
 
 /* Footer */
 footer { padding: 2rem 1rem; text-align: center; color: #6b7280; border-top: 1px solid #e5e7eb; }
