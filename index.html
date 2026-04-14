@@ -26,21 +26,30 @@
 </head>
 
 <body>
-    <!-- Your existing website content goes here -->
-    <!-- Hero, guide cards, buttons, etc. - leave all of this unchanged -->
+    <h1 style="text-align:center; padding: 50px 20px; color: #3b82f6;">
+        Level Adult UK
+    </h1>
+    <p style="text-align:center; font-size: 18px;">
+        Your adulting guides are loading...<br>
+        If you see this, the structure is correct.
+    </p>
+
+    <!-- Your original content should go here -->
+    <!-- Paste your hero, guide cards, Payhip buttons, etc. below this line -->
 
     <!-- Dark Mode Script -->
     <script>
         const toggle = document.getElementById('theme-toggle');
-        toggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-            toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
-        });
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                document.documentElement.classList.toggle('dark');
+                toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+            });
+        }
     </script>
 
-    <!-- PWA Note -->
     <script>
-        console.log('✅ Level-AdultUK PWA manifest active');
+        console.log('✅ Level-AdultUK site loaded with PWA manifest');
     </script>
 </body>
 </html>
